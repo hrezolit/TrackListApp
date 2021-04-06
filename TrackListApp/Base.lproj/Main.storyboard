@@ -3,11 +3,12 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Tarcklist-->
         <scene sceneID="HHA-uz-wgG">
             <objects>
                 <tableViewController id="m7W-FV-1Ck" customClass="TableViewController" customModule="TrackListApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,6 +24,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="HlC-bX-ASF" kind="show" id="2Px-hd-mVf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -30,7 +34,7 @@
                             <outlet property="delegate" destination="m7W-FV-1Ck" id="Rdq-yl-CSP"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="6Xi-gj-1ou"/>
+                    <navigationItem key="navigationItem" title="Tarcklist" id="6Xi-gj-1ou"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HvQ-JI-kyc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,6 +55,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OVJ-OW-7Ns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-319" y="368"/>
+        </scene>
+        <!--Description-->
+        <scene sceneID="keh-KG-w49">
+            <objects>
+                <viewController id="HlC-bX-ASF" customClass="DescriptionViewController" customModule="TrackListApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MdS-JP-VNQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WoO-Zd-wD4">
+                                <rect key="frame" x="30" y="118" width="354" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="vfw-RE-Jfy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNo-hx-yXW">
+                                <rect key="frame" x="30" y="458" width="354" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uKj-Rs-gtN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WoO-Zd-wD4" firstAttribute="top" secondItem="uKj-Rs-gtN" secondAttribute="top" constant="30" id="3jI-QZ-d26"/>
+                            <constraint firstItem="uKj-Rs-gtN" firstAttribute="trailing" secondItem="vNo-hx-yXW" secondAttribute="trailing" constant="30" id="56s-QF-1Mz"/>
+                            <constraint firstItem="vNo-hx-yXW" firstAttribute="leading" secondItem="uKj-Rs-gtN" secondAttribute="leading" constant="30" id="9kF-pX-XbZ"/>
+                            <constraint firstItem="WoO-Zd-wD4" firstAttribute="leading" secondItem="uKj-Rs-gtN" secondAttribute="leading" constant="30" id="Ex6-hd-Ic5"/>
+                            <constraint firstItem="uKj-Rs-gtN" firstAttribute="trailing" secondItem="WoO-Zd-wD4" secondAttribute="trailing" constant="30" id="iwQ-NF-fFy"/>
+                            <constraint firstItem="vNo-hx-yXW" firstAttribute="top" secondItem="WoO-Zd-wD4" secondAttribute="bottom" constant="40" id="qBJ-3K-ntA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Description" id="e6n-JR-1oM"/>
+                    <connections>
+                        <outlet property="imageView" destination="WoO-Zd-wD4" id="Emh-EE-Qmy"/>
+                        <outlet property="trackNameLabel" destination="vNo-hx-yXW" id="VTB-0l-XGA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3X2-jL-nXp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453.6231884057972" y="367.63392857142856"/>
         </scene>
     </scenes>
     <resources>

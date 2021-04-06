@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D595CA492612C8AC00DEA67B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595CA482612C8AC00DEA67B /* TableViewController.swift */; };
+		D595CA50261BFD6500DEA67B /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D595CA4F261BFD6500DEA67B /* DescriptionViewController.swift */; };
 		D59EBBF6260D999900E67C59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59EBBF5260D999900E67C59 /* AppDelegate.swift */; };
 		D59EBBF8260D999900E67C59 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59EBBF7260D999900E67C59 /* SceneDelegate.swift */; };
 		D59EBBFD260D999900E67C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59EBBFB260D999900E67C59 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		D595CA482612C8AC00DEA67B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D595CA4F261BFD6500DEA67B /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		D59EBBF2260D999900E67C59 /* TrackListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrackListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59EBBF5260D999900E67C59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D59EBBF7260D999900E67C59 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				D59EBBF7260D999900E67C59 /* SceneDelegate.swift */,
 				D59EBBFB260D999900E67C59 /* Main.storyboard */,
 				D595CA482612C8AC00DEA67B /* TableViewController.swift */,
+				D595CA4F261BFD6500DEA67B /* DescriptionViewController.swift */,
 				D59EBBFE260D999900E67C59 /* Assets.xcassets */,
 				D59EBC00260D999900E67C59 /* LaunchScreen.storyboard */,
 				D59EBC03260D999900E67C59 /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D59EBBF6260D999900E67C59 /* AppDelegate.swift in Sources */,
+				D595CA50261BFD6500DEA67B /* DescriptionViewController.swift in Sources */,
 				D595CA492612C8AC00DEA67B /* TableViewController.swift in Sources */,
 				D59EBBF8260D999900E67C59 /* SceneDelegate.swift in Sources */,
 			);
